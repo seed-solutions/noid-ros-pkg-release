@@ -1,0 +1,12 @@
+Source: ros-kinetic-noid-typef-bringup
+Section: misc
+Priority: extra
+Maintainer: hi-kondo <seed@todo.todo>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-noid-typef-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The noid_typef_bringup package
