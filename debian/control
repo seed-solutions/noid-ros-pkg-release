@@ -1,0 +1,12 @@
+Source: ros-kinetic-noid-typef-moveit-config
+Section: misc
+Priority: extra
+Maintainer: MoveIt Setup Assistant <assistant@moveit.ros.org>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://moveit.ros.org/
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-noid-typef-moveit-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-joint-state-publisher, ros-kinetic-moveit-planners-ompl, ros-kinetic-moveit-ros-move-group, ros-kinetic-moveit-ros-visualization, ros-kinetic-robot-state-publisher, ros-kinetic-xacro
+Description: The noid_typef_moveit_config package
