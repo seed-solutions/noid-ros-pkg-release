@@ -1,0 +1,12 @@
+Source: ros-kinetic-seed-r7-bringup
+Section: misc
+Priority: extra
+Maintainer: hi.kondo <hi.kondo@thk.co.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-seed-r7-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The seed_r7_bringup package
