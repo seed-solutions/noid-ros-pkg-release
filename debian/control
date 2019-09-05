@@ -1,0 +1,12 @@
+Source: ros-kinetic-seed-r7-navigation
+Section: misc
+Priority: extra
+Maintainer: hi.kondo <hi.kondo@thk.co.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-amcl, ros-kinetic-catkin, ros-kinetic-gmapping, ros-kinetic-joy, ros-kinetic-map-server, ros-kinetic-move-base, ros-kinetic-move-base-msgs, ros-kinetic-nav-msgs, ros-kinetic-teb-local-planner, ros-kinetic-teleop-twist-joy, ros-kinetic-urg-node
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-seed-r7-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-amcl, ros-kinetic-gmapping, ros-kinetic-joy, ros-kinetic-map-server, ros-kinetic-move-base, ros-kinetic-move-base-msgs, ros-kinetic-nav-msgs, ros-kinetic-teb-local-planner, ros-kinetic-teleop-twist-joy, ros-kinetic-urg-node
+Description: The seed_r7_navigation package
