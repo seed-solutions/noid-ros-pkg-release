@@ -11,13 +11,17 @@
 #include <nav_msgs/Odometry.h>
 #include <tf/transform_broadcaster.h>
 
-#include "seed_r7_lower_controller.h"
-#include "seed_r7_robot_hardware.h"
+#include "seed_r7_ros_controller/seed_r7_lower_controller.h"
+#include "seed_r7_ros_controller/seed_r7_robot_hardware.h"
 
 
 #define MAX_ACC_X 1.0
 #define MAX_ACC_Y 1.0
 #define MAX_ACC_Z 3.0
+
+
+namespace robot_hardware
+{
 
 struct pose
 {
@@ -66,5 +70,6 @@ class MoverController
 
 //typedef std::shared_ptr<NoidMoverController> NoidMoverControllerPtr;
 
+}
 
 #endif

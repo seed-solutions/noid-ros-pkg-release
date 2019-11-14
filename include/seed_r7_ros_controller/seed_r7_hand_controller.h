@@ -1,9 +1,12 @@
 #ifndef _HAND_CONTROLLER_H_
 #define _HAND_CONTROLLER_H_
 
-#include "seed_r7_robot_hardware.h"
+#include "seed_r7_ros_controller/seed_r7_robot_hardware.h"
 #include <seed_r7_ros_controller/HandControl.h>
 
+
+namespace robot_hardware
+{
 
 class HandController
 {
@@ -28,6 +31,6 @@ private:
 
 };
 
-
+}
 
 #endif

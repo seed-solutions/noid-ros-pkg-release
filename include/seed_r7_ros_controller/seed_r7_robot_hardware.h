@@ -33,10 +33,6 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
 
-/*
- Author: Yohei Kakiuchi
-*/
-
 #ifndef _ROBOT_HW_H_
 #define _ROBOT_HW_H_
 
@@ -51,25 +47,27 @@
 
 // ROS
 #include <ros/ros.h>
-#include <angles/angles.h>
 #include <std_msgs/Float32.h>
+#include <pluginlib/class_loader.h>
 
 // URDF
 #include <urdf/model.h>
 
 // AERO
-#include "seed_r7_upper_controller.h"
-#include "seed_r7_lower_controller.h"
-#include "stroke_converter.h"
+#include "seed_r7_ros_controller/seed_r7_upper_controller.h"
+#include "seed_r7_ros_controller/seed_r7_lower_controller.h"
+#include "seed_r7_ros_controller/stroke_converter_base.h"
 
 #include <mutex>
 
+
 namespace robot_hardware
 {
+
 class RobotHW : public hardware_interface::RobotHW
 {
 public:
-  RobotHW() { }
+  RobotHW() : converter_loader_("seed_r7_ros_controller", "StrokeConverter") { }
 
   virtual ~RobotHW() {}
 
@@ -78,7 +76,8 @@ public:
   virtual void write(const ros::Time& time, const ros::Duration& period);
 
   void readPos(const ros::Time& time, const ros::Duration& period, bool update);
-  void writeWheel(const std::vector< std::string> &_names, const std::vector<int16_t> &_vel, double _tm_sec);
+  void writeWheel(const std::vector< std::string> &_names,
+                  const std::vector<int16_t> &_vel, double _tm_sec);
   double getPeriod() { return ((double)CONTROL_PERIOD_US_) / (1000 * 1000); }
 
   //--specific functions--
@@ -116,8 +115,8 @@ protected:
   std::vector<int16_t> upper_act_strokes_;
   std::vector<int16_t> lower_act_strokes_;
 
-  boost::shared_ptr<UpperController> controller_upper_;
-  boost::shared_ptr<LowerController> controller_lower_;
+  boost::shared_ptr<robot_hardware::UpperController> controller_upper_;
+  boost::shared_ptr<robot_hardware::LowerController> controller_lower_;
 
   bool initialized_flag_;
   bool upper_send_enable_;
@@ -131,15 +130,15 @@ protected:
 
   std::vector<std::string> joint_names_upper_;
   std::vector<std::string> joint_names_lower_;
-  std::string robot_model;
+  std::string robot_model_plugin_;
 
   ros::Timer bat_vol_timer_;
   ros::Publisher bat_vol_pub_;
 
-  StrokeConverter *stroke_converter_;
+  pluginlib::ClassLoader<seed_converter::StrokeConverter> converter_loader_;
+  boost::shared_ptr<seed_converter::StrokeConverter> stroke_converter_;
 };
 
-typedef boost::shared_ptr<RobotHW> RobotHWPtr;
 }
 
 #endif
