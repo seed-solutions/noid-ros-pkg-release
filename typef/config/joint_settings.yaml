@@ -1,6 +1,11 @@
 joint_settings:
+  robot: typef
+  raw_data_size: 31
+  body_data_size: 30
+  base_data_size: 30
+
   upper:
-    name:
+    joints:
       - waist_y_joint
       - waist_p_joint
       - waist_r_joint
@@ -36,13 +41,13 @@ joint_settings:
     left_number: 27   #26+1
 
   lower:
-    name:
+    joints:
       - knee_joint
       - ankle_joint
     aero_index: [1,0]
 
   wheel:
-    name:
+    joints:
       - wheels_body_to_front_left_mecanum_connector   #fixed, not used
       - wheels_body_to_front_right_mecanum_connector  #fixed, not used
       - wheels_body_to_rear_left_mecanum_connector    #fixed, not used
