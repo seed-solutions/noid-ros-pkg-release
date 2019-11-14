@@ -1,0 +1,12 @@
+ros-kinetic-seed-r7-samples (0.3.0-1xenial) xenial; urgency=high
+
+  * Merge pull request #47 <https://github.com/seed-solutions/seed_r7_ros_pkg/issues/47> from y-shiigi/demo
+    add Moveit! sample
+  * add install at CMakeList.txt
+  * fix typo
+  * add samples
+  * Contributors: hi-kondo, y-shiigi
+
+ -- Yasuto Shiigi <y.shiigi@thk.co.jp>  Tue, 12 Nov 2019 15:00:00 -0000
+
+
