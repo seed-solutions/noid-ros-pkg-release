@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
     package: seed_r7_description
-    relative_path: typeF/noid.urdf.xacro
+    relative_path: typef/noid.urdf.xacro
     xacro_args: "--inorder "
   SRDF:
     relative_path: config/SEED-Noid-Mover-typeF.srdf

@@ -2,7 +2,7 @@
 <launch>
   <arg name="paused" default="false"/>
   <arg name="gazebo_gui" default="true"/>
-  <arg name="urdf_path" default="$(find seed_r7_description)/typeF/noid.urdf.xacro"/>
+  <arg name="urdf_path" default="$(find seed_r7_description)/typef/noid.urdf.xacro"/>
 
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
