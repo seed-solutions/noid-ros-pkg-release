@@ -2,11 +2,10 @@
 Changelog for package seed_r7_typef_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Merge pull request `#24 <https://github.com/hi-kondo/seed_r7_ros_pkg/issues/24>`_ from hi-kondo/development
-  fixed CMakeLists and launch_test added
-* Merge pull request `#22 <https://github.com/hi-kondo/seed_r7_ros_pkg/issues/22>`_ from hi-kondo/development
-  directory name changed
-* added launch_test
-* fixed error
-* directory name changed
-* Contributors: hi-kondo
+0.3.0 (2019-11-13)
+------------------
+* Merge branch 'sasabot-master'
+* Merge branch 'master' of https://github.com/sasabot/seed_r7_ros_pkg into sasabot-master
+* Update package.xml
+* lowercase file names, move csv locations, remove hard-coded data size
+* Contributors: Kazuhiro Sasabuchi, hi-kondo

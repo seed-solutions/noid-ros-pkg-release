@@ -22,7 +22,7 @@
   <arg name="gazebo_gui" default="true"/>
   <arg name="paused" default="false"/>
   <!-- By default, use the urdf location provided from the package -->
-  <arg name="urdf_path" default="$(find seed_r7_description)/typeF/noid.urdf.xacro"/>
+  <arg name="urdf_path" default="$(find seed_r7_description)/typef/noid.urdf.xacro"/>
 
   <!-- launch the gazebo simulator and spawn the robot -->
   <include file="$(find seed_r7_typef_moveit_config)/launch/gazebo.launch" >
