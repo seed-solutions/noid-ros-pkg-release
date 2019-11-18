@@ -1,26 +1,8 @@
-# seed_r7_ros_pkg
-seed-noid meta package
-## How to run
-### To bring up robot_control
+# seed_r7_samples
 
-``roslaunch seed_r7_bringup seed_r7_bringup.launch`` 
+Please run the following command.
 
-### To use make_map
+```roslaunch seed_r7_samples demo.launch```
 
-``roslaunch seed_r7_navigation wheel_with_making_map.launch``
-
-### To use map_save
-
-``roslaunch seed_r7_navigation map_saver.launch``
-
-※Caution: Don't exit nodes of make_map before launch map_saver.
-
-
-Map file is saved in 
-
-``/home/{USER}/ros/{distro}/src/seed_r7_ros_pkg/seed_r7_navigation/config/map.pgm``
-
-### To use saved map
-
-``roslaunch seed_r7_navigation wheel_with_static_map.launch``
+![moveit](https://user-images.githubusercontent.com/12426780/68364074-455e6300-0170-11ea-82d4-ffb3afb18af1.gif)
 
