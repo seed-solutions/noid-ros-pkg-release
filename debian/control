@@ -1,0 +1,12 @@
+Source: ros-melodic-seed-r7-ros-controller
+Section: misc
+Priority: optional
+Maintainer: hi.kondo <hi.kondo@thk.co.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-angles, ros-melodic-catkin, ros-melodic-control-msgs, ros-melodic-control-toolbox, ros-melodic-controller-manager, ros-melodic-geometry-msgs, ros-melodic-hardware-interface, ros-melodic-joint-limits-interface, ros-melodic-joint-state-controller, ros-melodic-joint-trajectory-controller, ros-melodic-message-generation, ros-melodic-move-base-msgs, ros-melodic-nav-msgs, ros-melodic-pluginlib, ros-melodic-realtime-tools, ros-melodic-roscpp, ros-melodic-rostest, ros-melodic-seed-r7-description, ros-melodic-seed-smartactuator-sdk, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-trajectory-msgs, ros-melodic-transmission-interface, ros-melodic-urdf
+Homepage: http://ros.org/wiki/
+Standards-Version: 3.9.2
+
+Package: ros-melodic-seed-r7-ros-controller
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-angles, ros-melodic-control-msgs, ros-melodic-control-toolbox, ros-melodic-controller-manager, ros-melodic-geometry-msgs, ros-melodic-hardware-interface, ros-melodic-joint-limits-interface, ros-melodic-joint-state-controller, ros-melodic-joint-trajectory-controller, ros-melodic-message-generation, ros-melodic-move-base-msgs, ros-melodic-nav-msgs, ros-melodic-pluginlib, ros-melodic-realtime-tools, ros-melodic-roscpp, ros-melodic-rostest, ros-melodic-seed-r7-description, ros-melodic-seed-smartactuator-sdk, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-trajectory-msgs, ros-melodic-transmission-interface, ros-melodic-urdf
+Description: The seed_r7_ros_controller package
