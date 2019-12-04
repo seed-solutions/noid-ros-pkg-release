@@ -1,0 +1,12 @@
+Source: ros-melodic-seed-r7-samples
+Section: misc
+Priority: optional
+Maintainer: Yasuto Shiigi <y.shiigi@thk.co.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-moveit-commander, ros-melodic-moveit-simple-controller-manager, ros-melodic-roslaunch, ros-melodic-rostest, ros-melodic-rviz, ros-melodic-rviz-plugin-tutorials, ros-melodic-seed-r7-bringup, ros-melodic-seed-r7-moveit-config, ros-melodic-seed-r7-navigation, ros-melodic-seed-r7-robot-interface, ros-melodic-seed-r7-ros-controller, ros-melodic-seed-r7-typef-moveit-config, ros-melodic-smach-ros, ros-melodic-smach-viewer
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-seed-r7-samples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-moveit-commander, ros-melodic-moveit-simple-controller-manager, ros-melodic-rviz, ros-melodic-rviz-plugin-tutorials, ros-melodic-seed-r7-bringup, ros-melodic-seed-r7-moveit-config, ros-melodic-seed-r7-navigation, ros-melodic-seed-r7-robot-interface, ros-melodic-seed-r7-ros-controller, ros-melodic-seed-r7-typef-moveit-config, ros-melodic-smach-ros, ros-melodic-smach-viewer
+Description: The seed_r7_samples package
