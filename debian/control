@@ -1,0 +1,12 @@
+Source: ros-kinetic-seed-r7-samples
+Section: misc
+Priority: optional
+Maintainer: Yasuto Shiigi <y.shiigi@thk.co.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-moveit-commander, ros-kinetic-moveit-simple-controller-manager, ros-kinetic-roslaunch, ros-kinetic-rostest, ros-kinetic-rviz, ros-kinetic-rviz-plugin-tutorials, ros-kinetic-seed-r7-bringup, ros-kinetic-seed-r7-moveit-config, ros-kinetic-seed-r7-navigation, ros-kinetic-seed-r7-robot-interface, ros-kinetic-seed-r7-ros-controller, ros-kinetic-seed-r7-typef-moveit-config, ros-kinetic-smach-ros, ros-kinetic-smach-viewer
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-seed-r7-samples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-moveit-commander, ros-kinetic-moveit-simple-controller-manager, ros-kinetic-rviz, ros-kinetic-rviz-plugin-tutorials, ros-kinetic-seed-r7-bringup, ros-kinetic-seed-r7-moveit-config, ros-kinetic-seed-r7-navigation, ros-kinetic-seed-r7-robot-interface, ros-kinetic-seed-r7-ros-controller, ros-kinetic-seed-r7-typef-moveit-config, ros-kinetic-smach-ros, ros-kinetic-smach-viewer
+Description: The seed_r7_samples package
