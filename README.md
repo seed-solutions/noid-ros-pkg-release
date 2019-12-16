@@ -1,3 +1,35 @@
+## seed_r7_ros_pkg (kinetic) - 0.3.4-1
+
+The packages in the `seed_r7_ros_pkg` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic seed_r7_ros_pkg` on `Mon, 16 Dec 2019 06:32:30 -0000`
+
+These packages were released:
+- `seed_r7_bringup`
+- `seed_r7_description`
+- `seed_r7_moveit_config`
+- `seed_r7_navigation`
+- `seed_r7_robot_interface`
+- `seed_r7_ros_controller`
+- `seed_r7_ros_pkg`
+- `seed_r7_samples`
+- `seed_r7_typef_moveit_config`
+
+Version of package(s) in repository `seed_r7_ros_pkg`:
+
+- upstream repository: https://github.com/seed-solutions/noid-ros-pkg.git
+- release repository: https://github.com/seed-solutions/seed_r7_ros_pkg-release.git
+- rosdistro version: `0.3.3-2`
+- old version: `0.3.3-2`
+- new version: `0.3.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.15`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## seed_r7_ros_pkg (kinetic) - 0.3.3-2
 
 The packages in the `seed_r7_ros_pkg` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic seed_r7_ros_pkg` on `Thu, 05 Dec 2019 04:18:49 -0000`
