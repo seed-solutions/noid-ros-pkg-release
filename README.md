@@ -1,5 +1,26 @@
-# seed_r7_ros_pkg
+# seed_r7_ros_pkg  
 seed-noid meta package
+
+## Continuous Integration Status
+service    | Kinetic | Melodic |
+---------- | ------- | ------- |
+Travis     | ![Build Status](https://travis-ci.com/seed-solutions/seed_r7_ros_pkg.svg?branch=master) | ![Build Status](https://travis-ci.com/seed-solutions/seed_r7_ros_pkg.svg?branch=master)
+## How to install
+### 1. From Debian
+```
+  sudo apt-get update
+  sudo apt-get install ros-{distro}-seed-r7-ros-pkg
+```
+
+### 2. From Source
+In your catkin_ws/src,
+```
+  sudo apt-get install ros-{distro}-seed-smartactuator-sdk
+  source /opt/ros/{distro}/setup.bash
+  git clone https://github.com/seed-solutions/seed_r7_ros_pkg.git
+  catkin build seed_r7_ros_pkg
+  source {your-workspace}/devel/setup.bash
+```
 ## How to run
 ### Bring up robot_control(with real robot and Simulation on rviz)
 
@@ -8,6 +29,10 @@ seed-noid meta package
 ## Without real robot (Simulation on rviz)
 
 ``roslaunch seed_r7_navigation wheel_with_dummy.launch``
+
+``rosrun  rviz rviz ``
+
+![sample](https://i.imgur.com/ffLGv19.png)
 ## To confirm a single axis movement of manipulator easily
 
 ``` 
@@ -16,11 +41,16 @@ source /opt/ros/{distro}/setup.bash
 rosrun rqt_joint_trajectory_controller rqt_joint_trajectory_controller 
 ```
 
+![sample2](https://i.imgur.com/PHdqmfn.png)
+![sample3](https://i.imgur.com/InP1J9Z.png)
+
+http://wiki.ros.org/rqt_joint_trajectory_controller
+
 ### Sample code (you input only this command, so robot_controller and rviz, smach_viewer launched)
 
 ``roslaunch seed_r7_samples demo.launch``
 
-in detail : https://github.com/seed-solutions/seed_r7_ros_pkg/blob/master/seed_r7_samples/README.md
+In detail : https://github.com/seed-solutions/seed_r7_ros_pkg/blob/master/seed_r7_samples/README.md
 
 
 ## With real robot
